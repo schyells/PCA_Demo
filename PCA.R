@@ -87,6 +87,9 @@ plot <- plot + geom_text(data = PCA_loadings*3,
 
 plot #visualize the plot
 
+install.packages("vegan")
+library(vegan)
+
 #Perform a permanova on the first principal component to see if species are significantly different 
 adonis2(PCA_scores$Comp.1 ~ Species,
         data = PCA_scores,
