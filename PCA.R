@@ -32,7 +32,7 @@ PCA <- princomp(dat.scale) #Run the Principal Analysis Component
 
 #Summary recognizes that this is a PCA and will give us the PC and we can 
 #request to see the loadings
-summary(PCA,loadings = T) 
+summary(PCA,loadings = T,cutoff=0) 
 
 
 biplot(PCA) #Raw generic plot
